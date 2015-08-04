@@ -1,0 +1,23 @@
+<h1>Welcome to our travel site</h1>
+<p>This is cool.</p>
+
+<p>
+	<%= @homeland%>
+</p>
+
+<ol>
+	<% @countries.each do |country|%>
+		<li><%=country%></li>
+	<%end%>
+</ol>
+
+<%= image_tag 'minihorse.jpg', alt: "mini horse", class: "pony" %>
+<%= image_tag 'minihorse3.jpg', class: "pony"%>
+<%= image_tag 'minihorses2.jpg', class: "pony"%>
+<%= image_tag 'minihorse4.jpg', class: "pony"%>
+
+<%@images.each do |pic|%>
+	<%= image_tag pic, class: "pony"%>
+<%end%>
+
+
